@@ -11,7 +11,7 @@
 			<input name=userid><br>
 			<input name=pwd><br>
 			<select name=isForward>
-				<option value="true">Forward</option>
+				<option value="true" selected>Forward</option>
 				<option value="false">Redirect</option>
 			</select>
 			<input type=submit>

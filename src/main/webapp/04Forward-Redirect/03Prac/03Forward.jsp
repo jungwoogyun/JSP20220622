@@ -7,6 +7,15 @@
 <title>Insert title here</title>
 </head>
 <body>
+<h1>Forward결과</h1>
+
+
+<%
+String userid = request.getParameter("userid");
+String pwd = request.getParameter("pwd");
+%>
+ID : <%=userid %><br>
+PW : <%=pwd %><br>
 
 </body>
 </html>
