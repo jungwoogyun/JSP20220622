@@ -1,0 +1,130 @@
+/* content */
+#main-container{
+    /* height:500px; */
+}
+
+/* 배너  */
+#banner-slider{ 
+    height:500px;  
+}
+#banner-slider img{width : 1616px;height:100%;}
+#banner-slider ul{
+    padding:0px; list-style:none;
+}
+
+/* tab */
+#tab{height:650px;}
+ul{list-style:none;padding:0px;}
+#tabcontainer{
+    width : 700px;
+    height : 600px;
+    /* border : 1px solid gray; */
+    margin-top:50px;
+    /* margin : 100px auto; */
+    padding : 10px;
+    position : relative;  
+    box-shadow: 5px 5px 15px lightgray;  
+}
+#tabUI>ul{
+    display:flex;
+    justify-content: space-around;
+    position:relative;
+}
+#tabUI li{
+    width : 120px;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    /* border : 1px solid gray; */
+    min-width: 120px;
+    position:relative;    
+    box-shadow: 2px 2px 2px lightgray;    
+}
+#tabContents{
+    border : 1px solid lightgray;
+    height :82%;
+    
+}
+#tabContents div{
+    display:none;
+}
+#tabUI .on{
+    background-color:orange;
+}
+#tabContents .on{
+    display:block;
+}
+#tabcontainer{position:relative;}
+#tabcontainer #prev,#tabcontainer #next{position:absolute; cursor:pointer;}
+#tabcontainer #prev,#tabcontainer #next
+{
+    width:40px;height:40px;
+    /* border : 1px solid gray; */
+    box-shadow: 3px 3px 3px lightgray; 
+    line-height:40px;text-align:center;
+    border-radius: 50%;
+    background-color:white;
+    z-index:2;
+   
+}
+#tabcontainer #prev{
+    left:-10px;
+    top:15px;
+}
+#tabcontainer #next{
+    left:95%;
+    top:15px;
+}
+
+
+
+/* card */
+#cards{height:800px;}
+.card{
+    width : 250px;
+    height: 250px;
+    position:relative;
+    margin:20px;
+}
+.card img{
+    width:100%;
+    height:100%;
+    transition:0.4s;
+    filter: grayscale(100%);
+   
+}
+.card img:hover {
+    transform:scale(1.03,1.03);
+    transition:0.4s;
+    filter: grayscale(0%);
+    cursor:pointer;
+    
+}
+.iteminfo{
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:25px;
+    top:110px;
+    background-color:white;
+    box-shadow: 0px 0px 14.4px 0.6px rgb(34 30 31 / 30%);
+    padding :10px;
+}
+.iteminfo span, .iteminfo a{font-size:0.5rem;}
+.iteminfo p{font-size:0.7rem;}
+#cards{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+.card{
+   margin:0px;
+}
+
+
+
+
+#item-slider{
+    width:100%;
+    height:500px;
+}

@@ -1,0 +1,31 @@
+    /* footer */
+    footer{
+        height:300px;
+    }
+	    
+			#top-element{}
+		#footer-menu{
+                display:flex;
+            }
+            #footer-menu>li{
+                width:150px;
+            }
+            #body-element{
+                margin-top:50px;
+                display:flex;
+                align-items: center;
+            }
+            #footer-logo{
+                width:100px;
+                height:100px;
+            }
+            #info{
+                width:70%;
+                height:50px;
+            }
+            #sns{
+                width:30%;
+                height:100px;
+            }
+    
+    

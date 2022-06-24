@@ -1,0 +1,133 @@
+     /* topmenu */
+     #topmenu{}
+     header{
+         height:50px;
+     }
+
+     /* Quick */
+    #quick{
+        
+        display:flex;
+        flex-direction: row-reverse;
+        align-items:center;
+        
+      
+    }
+    
+     /* Nav */
+     nav
+     {
+        margin-top:5px;
+        /* height:120px; */
+        background-color:beige;
+     }
+     #depth1{
+         display:flex;
+         /* 수평정렬 */
+         justify-content: center;
+         /* 수직정렬 */
+         align-items: center;
+     }
+     #depth1>li{
+         width:150px;
+         margin:0 50px;
+     }
+     #logo{
+         width:100px;
+         height:100px;
+     }   
+
+ 
+
+             /* Sitemenu 시작 */
+             #chk{
+                display:none;
+            }
+            #sitemenu{
+                position:relative;
+                /* margin:10px 40px 0px 10px; */
+                margin-left:5px;
+                margin-right:-5px;
+                margin-top:10px;
+            }
+            #sitemenu span{
+              display:block;
+              width:35px;
+              height:5px;
+              background-color:black;
+              margin:5px;
+          }
+          input[id="chk"]:checked+label #top{
+              transform:translate(0px,10px) rotate(45deg);
+              transition: 0.5s;
+          }
+          input[id="chk"]:checked+label #bottom{
+              transform:translate(0px,-10px) rotate(-45deg);
+              transition: 0.5s;
+          }
+          input[id="chk"]:checked+label #middle{
+              /* transform:translate(-100px,0px); */
+              opacity:0;
+              transition: 0.5s;
+          }
+        /* Sitemenu 끝 */
+        /* bg style 시작 */
+        .bgon{
+            display : block;
+            position : fixed;
+            left : 0%;
+            top : 0%;
+            width : 100%;
+            height : 2000px;
+            opacity: 0.5;
+            /* z-index 는 JS에서 처리 */
+            background-color : lightgray;
+        }
+        /* bg style 끝 */
+        /* modal style 시작 */
+        #modal{
+            width : 80%;
+            height : 850px;
+            position:fixed;
+            left : 10%;
+            top : 6%;
+            background-color:white;
+            display:none;
+        }
+      
+
+
+        /* modal style 끝 */
+        /* login 시작 */
+        #loginwin{
+            display:none;
+        }
+        @keyframes ShowLogin{
+            from{left:100%}
+            to{left:70%}
+        }
+        @keyframes HideLogin{
+            from{left:70%;background-color:white;}
+            to{left:100%;background-color:white;}
+        }
+        .loginon{
+            display:block;
+            position:fixed;
+            width:30%;
+            height:100%;
+            left:70%;
+            top:0%;
+            background-color:white;
+            animation-name:ShowLogin;
+            animation-duration: 0.6s;
+        }
+        .loginoff{
+            position:fixed;
+            width:30%;
+            height:100%;
+            left:100%;
+            top:0%;
+            animation-name: HideLogin;
+            animation-duration: 0.6s;
+        }
+        /* login 끝 */
