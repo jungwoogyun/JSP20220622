@@ -18,7 +18,7 @@
 	
 	session.setAttribute("ID", id);
 	session.setAttribute("PW", pw);
-	session.setMaxInactiveInterval(20);
+	session.setMaxInactiveInterval(20); //1800초 기본값 
 %>
 
 <a href="01SessionInfo.jsp">세션정보확인</a>
