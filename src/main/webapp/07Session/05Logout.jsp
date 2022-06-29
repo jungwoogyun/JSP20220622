@@ -7,7 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<jsp:useBean id="Cartbean" class="Ch07.CartRepository" scope="application" />
+	
 	<jsp:useBean id="sessionSave" class="Ch07.SessionSave" scope="application" />
 	<%
 		String id=(String)session.getAttribute("ID");
@@ -15,7 +16,7 @@
 		sessionSave.slist.remove(id);
 		
 		session.invalidate();
-		
+		System.out.println("총 저장 MAP(OUT) : " + Cartbean.cart.size());
 		if(id!=null)
 		{
 			%>
