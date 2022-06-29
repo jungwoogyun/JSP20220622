@@ -9,7 +9,7 @@
 <body>
 	
 <jsp:useBean id="Cartbean" class="Ch07.CartRepository" scope="application" />
-<jsp:useBean id="ProductDTO" class="Ch07.ProductDTO" scope="application" />
+<jsp:useBean id="ProductDTO" class="Ch07.ProductDTO" scope="page" />
 <jsp:setProperty property="*" name="ProductDTO"/>
 
 <%@page import="java.util.*,Ch07.*" %>
