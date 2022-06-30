@@ -16,6 +16,19 @@ Publisher varchar2(55) not null
 TotalPage int 
 Amount int 
 -------------------------------
+drop table book_tbl cascade constraints;
+
+create table Book_tbl
+(
+    No int primary key,
+    BookCode int not null,
+    BookName varchar2(45),
+    Publisher varchar2(55),
+    TotalPage int,
+    Amount int
+);
+
+-------------------------------
 02PRAC폴더안에서 파일 만들고 진행합니다
 1 Book_Tbl에 더미값 200행을 추가하세요(01Post200.jsp)
 2 Book_Tbl의 모든 행을 웹페이지로 출력합니다(02Select.jsp)
