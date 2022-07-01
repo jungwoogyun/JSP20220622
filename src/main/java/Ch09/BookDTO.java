@@ -7,6 +7,7 @@ public class BookDTO {
 	private String publisher;
 	private int totalpage;
 	private int amount;
+	public BookDTO() {};
 	//	Getter And Setter , ToString 만들기 ,모든필드 생성자 추가
 	public BookDTO(int no, int bookcode, String bookname, String publisher, int totalpage, int amount) {
 		super();
